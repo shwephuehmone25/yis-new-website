@@ -1,0 +1,17 @@
+:root {
+  --red: #a51d24;
+  --red-dark: #971b1e;
+  --wine: #4f0e10;
+  --gold: #ffa900;
+  --text: #414141;
+  --muted: #777;
+  --cream: #fdfbf7;
+  --sand: #f4f0e6;
+  --border: #e6e2db;
+  --white: #fff;
+  --serif: Georgia, 'Times New Roman', serif;
+  --radius: 6px;
+  --container: 1280px;
+  --section-space: 96px;
+  --card-shadow: 0 4px 14px rgb(0 0 0 / 6%);
+}
