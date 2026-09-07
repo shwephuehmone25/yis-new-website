@@ -1,0 +1,70 @@
+.hero, .enrollment { position: relative; isolation: isolate; }
+.backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.hero::before, .enrollment::before { content: ''; position: absolute; inset: 0; z-index: -1; }
+.hero { min-height: 600px; display: flex; align-items: center; }
+.hero::before { background: linear-gradient(90deg, rgb(79 14 16 / 78%), rgb(79 14 16 / 12%)); }
+.hero h1 { color: white; font-size: 76px; line-height: 1.05; text-transform: uppercase; max-width: 640px; }
+.hero p { max-width: 610px; font-size: 16px; line-height: 1.7; margin: 32px 0; color: #f4e8e4; }
+.actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.actions > *, .visit a { gap: 8px; }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.copy p { font-size: 16px; line-height: 1.8; color: var(--muted); margin-bottom: 18px; }
+.teacherImages { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.teacherImages img { width: 100%; height: 280px; object-fit: cover; }
+.teacherImages img:last-child { margin-top: 34px; }
+.stats { display: flex; gap: 32px; margin: 28px 0 0; }
+.stats > div { display: flex; flex-direction: column; }
+.stats dt { color: var(--muted); text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.stats dd { order: -1; color: var(--red); font-weight: 700; font-size: 36px; margin: 0 0 4px; }
+.facilities { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.facilities figure { position: relative; margin: 0; }
+.facilities img { width: 100%; aspect-ratio: 1.5; object-fit: cover; }
+.facilities figcaption { position: absolute; bottom: 0; left: 0; right: 0; padding: 12px; color: white; background: rgb(0 0 0 / 60%); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; }
+.communityImage { position: relative; }
+.communityImage > img { width: 100%; height: 460px; object-fit: cover; }
+.communityImage > span { position: absolute; right: -16px; bottom: -16px; display: grid; align-content: center; justify-items: center; background: var(--gold); color: white; width: 120px; height: 120px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+.communityImage strong { font-size: 36px; }
+.nationalities { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 32px; gap: 12px; }
+.nationalities > div { border: 1px solid var(--border); padding: 20px 8px; display: grid; justify-items: center; gap: 12px; color: var(--red); }
+.nationalities span { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.nationalities > :first-child svg { color: #b29b15; }
+.nationalities > :last-child svg { color: #327c96; }
+.outcomes { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 3px solid var(--gold); }
+.outcomes article { text-align: center; padding: 56px 28px; }
+.outcomes article:nth-child(odd) { background: #efdad7; }
+.outcomes article:nth-child(even) { background: white; }
+.outcomes svg { color: var(--gold); margin-bottom: 28px; }
+.outcomes h3 { font-size: 16px; line-height: 1.4; text-transform: uppercase; margin-bottom: 18px; }
+.outcomes p { color: var(--muted); font-size: 14px; line-height: 1.8; }
+.sectionTop { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
+.sectionTop > p { max-width: 350px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.sectionTop > button { gap: 8px; }
+.cardGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.enrollment { text-align: center; color: white; padding-block: var(--section-space); }
+.enrollment::before { background: rgb(151 27 30 / 88%); }
+.eyebrow { display: block; color: var(--gold); font-size: 12px; text-transform: uppercase; font-weight: 700; letter-spacing: 4px; margin-bottom: 16px; }
+.enrollment h2 { font-size: 56px; line-height: 1.15; text-transform: uppercase; }
+.enrollment p { max-width: 720px; font-size: 16px; line-height: 1.65; margin: 28px auto; }
+.enrollment .actions { justify-content: center; }
+.enrollment .actions > * { min-width: 240px; }
+.connections h2 { font-size: 26px; letter-spacing: 2px; }
+.connections > div:last-child { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+.contactList { font-style: normal; display: grid; gap: 24px; max-width: 460px; }
+.contactList > div { display: flex; gap: 24px; align-items: flex-start; }
+.contactList svg { flex-shrink: 0; color: var(--red); margin-top: 8px; }
+.contactList strong { display: block; color: var(--gold); text-transform: uppercase; font-size: 11px; letter-spacing: 2px; margin-bottom: 8px; }
+.contactList span, .contactList a { display: block; font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; }
+.contactForm { padding: 40px; background: white; display: grid; gap: 18px; }
+.contactForm h3 { color: var(--red); font-size: 24px; text-transform: uppercase; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.contactForm label { display: grid; gap: 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+.nameFields { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.contactForm input, .contactForm textarea { width: 100%; min-width: 0; padding: 12px; background: var(--cream); border: 1px solid var(--border); color: var(--text); font: 14px Arial, Helvetica, sans-serif; border-radius: 0; }
+.contactForm textarea { resize: vertical; }
+.contactForm input::placeholder, .contactForm textarea::placeholder { color: #999; }
+.formStatus { font-size: 14px; line-height: 1.6; }
+.formStatus a { color: var(--red); text-decoration: underline; }
+.visit { text-align: center; }
+.visit h2 { color: var(--red); font-size: 30px; text-transform: uppercase; margin-bottom: 28px; }
+@media (max-width: 1000px) { .split { gap: 40px; } .outcomes { grid-template-columns: repeat(2, 1fr); } .outcomes article { padding: 40px 24px; } .cardGrid { gap: 16px; } .contactForm { padding: 28px; } }
+@media (max-width: 900px) { .hero h1 { font-size: 60px; } .split { grid-template-columns: 1fr; } .teacherImages { max-width: 600px; } .communityImage { max-width: 600px; } .cardGrid { grid-template-columns: 1fr; } .facilities { grid-template-columns: repeat(2, 1fr); } .enrollment { padding-block: 64px; } .enrollment h2 { font-size: 44px; } }
+@media (max-width: 600px) { .hero { min-height: 510px; } .hero h1 { font-size: 44px; } .hero .backdrop { object-position: 60% center; } .hero p { max-width: 340px; } .teacherImages img { height: 220px; } .stats { gap: 24px; } .stats dd { font-size: 30px; } .facilities figcaption { font-size: 10px; padding: 8px; } .communityImage > img { height: 340px; } .communityImage > span { right: 0; width: 100px; height: 100px; } .nationalities { gap: 6px; } .nationalities span { font-size: 9px; letter-spacing: .5px; } .outcomes { grid-template-columns: 1fr; } .sectionTop { align-items: flex-start; flex-direction: column; gap: 0; margin-bottom: 24px; } .enrollment { padding-block: 52px; } .enrollment h2 { font-size: 36px; } .nameFields { grid-template-columns: 1fr; } .contactForm { padding: 24px; } .visit h2 { font-size: 26px; } }

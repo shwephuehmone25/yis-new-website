@@ -6,7 +6,7 @@ export default function Navigation() {
   return <nav aria-label="Main navigation" className={styles.navigation}>
     <button className={styles.menuToggle} aria-expanded={open} aria-controls="main-navigation" onClick={() => setOpen(!open)}>{open ? 'Close' : 'Menu'}</button>
     <ul id="main-navigation" className={`${styles.navLinks} ${open ? styles.open : ''}`}>
-      {links.map(([label, id]) => <li key={id}><a href={`#${id}`} className={id === 'home' ? styles.active : ''} onClick={() => setOpen(false)}>{label}</a></li>)}
+      {links.map(([label, id]) => <li key={id}><a href={id === 'home' ? '/#home' : `#${id}`} className={id === 'home' ? styles.active : ''} onClick={() => setOpen(false)}>{label}</a></li>)}
     </ul>
   </nav>;
 }

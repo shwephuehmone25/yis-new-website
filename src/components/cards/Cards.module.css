@@ -1,5 +1,6 @@
 .campus { background: white; box-shadow: var(--card-shadow); overflow: hidden; border-radius: var(--radius) var(--radius) 0 0; }
-.campus > img { width: 100%; height: 220px; object-fit: cover; }
+.cardImage { position: relative; }
+.cardImage > img { width: 100%; height: 220px; object-fit: cover; }
 .campusBody { padding: 24px; }
 .campus h3 { color: var(--red); text-transform: uppercase; font-size: 26px; letter-spacing: 1px; }
 .campus h3::after { content: ''; display: block; width: 36px; height: 2px; background: var(--gold); margin-block: 14px; }
@@ -15,5 +16,25 @@
 .accreditation { text-align: center; }
 .accreditation > span { display: grid; place-items: center; width: 96px; height: 96px; border: 1px solid #ecdfc5; border-radius: 50%; margin: 0 auto 14px; font: 700 17px var(--serif); color: var(--red); }
 .accreditation p { color: var(--muted); font-size: 12px; line-height: 1.5; }
+.imageBadge { width: 160px; max-width: 100%; margin-inline: auto; }
+.imageBadge > img { width: 100%; height: 96px; object-fit: contain; margin: 0 auto 14px; }
 @media (max-width: 1150px) { .program { padding: 22px; } .programTitle { flex-wrap: wrap; } }
-@media (max-width: 600px) { .campusBody { padding: 22px; } .campus > img { height: auto; aspect-ratio: 28 / 11; } .programTitle { flex-wrap: nowrap; } }
+.editorial { border: 1px solid var(--border); border-radius: 0; box-shadow: none; }
+.editorial .cardImage > img { height: 200px; }
+.editorial h3 { font-size: 20px; letter-spacing: 0; }
+.editorial h3::after { display: none; }
+.editorial p { margin-block: 16px; line-height: 1.65; }
+.cardEyebrow { display: block; color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; }
+.news { background: transparent; border: 0; }
+.news h3 { font-size: 17px; color: var(--text); }
+.news .campusBody { padding-inline: 20px; }
+.date { position: absolute; top: 12px; left: 12px; display: grid; text-align: center; background: var(--red); color: white; padding: 8px 12px; font-size: 11px; text-transform: uppercase; }
+.date strong { font-size: 22px; }
+.solidBadge { max-width: 110px; }
+.solidBadge > span { background: var(--badge-color, var(--wine)); color: white; width: 76px; height: 76px; border: 0; font-size: 14px; }
+.solidBadge p { font-size: 10px; }
+.navy { --badge-color: #211e56; }
+.blue { --badge-color: #064b70; }
+.green { --badge-color: #285f34; }
+.brown { --badge-color: #58412d; }
+@media (max-width: 600px) { .campusBody { padding: 22px; } .cardImage > img { height: auto; aspect-ratio: 28 / 11; } .programTitle { flex-wrap: nowrap; } }
