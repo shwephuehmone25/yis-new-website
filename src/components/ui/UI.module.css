@@ -13,7 +13,7 @@
 .outline { background: white; color: var(--red); }
 .outline:hover { background: var(--cream); }
 .gold { border-color: var(--gold); background: var(--gold); color: #342809; }
-.gold:hover { background: #ed9d00; }
+.gold:hover { background: #FAA919; }
 .ghost { border-color: white; color: white; background: transparent; }
 .ghost:hover { background: rgb(255 255 255 / 15%); }
 .text { border: 0; padding: 0; min-height: 36px; color: var(--red); background: transparent; }

@@ -15,7 +15,7 @@
 .menuToggle { display: none; }
 .skipLink { position: absolute; top: -100px; left: 20px; padding: 12px; background: white; z-index: 5; }
 .skipLink:focus { top: 10px; }
-.footer { background: var(--wine); padding-top: 80px; color: #b78a8b; font-size: 13px; line-height: 1.65; }
+.footer { background: #890C25; padding-top: 80px; color: #b78a8b; font-size: 13px; line-height: 1.65; }
 .footerGrid { display: grid; grid-template-columns: 1.35fr 1fr .8fr; gap: 80px; padding-bottom: 60px; }
 .compact { color: white; font-size: 14px; gap: 10px; }
 .compact small { font-size: 8px; letter-spacing: 3px; }
@@ -32,7 +32,7 @@
 .footer address { font-style: normal; line-height: 1.35; }
 .footer address strong, .footer address span { display: block; }
 .footer address strong { color: #d4b2b2; margin-top: 16px; }
-.copyright { border-top: 1px solid #692426; display: flex; justify-content: space-between; gap: 20px; padding-block: 24px 36px; font-size: 12px; }
+.copyright { border-top: 1px solid #890C25; display: flex; justify-content: space-between; gap: 20px; padding-block: 24px 36px; font-size: 12px; }
 @media (max-width: 1150px) { .navLinks { gap: 18px; } .brand { font-size: 16px; } .headerInner { gap: 20px; } }
 @media (max-width: 900px) { .menuToggle { display: block; background: white; border: 1px solid var(--red); color: var(--red); padding: 10px 16px; } .headerInner { position: relative; } .navLinks { display: none; position: absolute; left: 0; right: 0; top: 100%; padding: 20px; background: white; z-index: 3; box-shadow: var(--card-shadow); } .navLinks.open { display: grid; gap: 20px; } .footerGrid { gap: 36px; grid-template-columns: 1.2fr 1fr; } .footerGrid > :first-child { grid-column: 1 / -1; } }
 @media (max-width: 600px) { .topbarInner { padding-block: 8px; } .emails { flex-direction: column; gap: 4px; align-items: flex-start; font-size: 10px; } .topActions { gap: 10px; font-size: 11px; } .topActions > :last-child { padding-left: 10px; } .brand { font-size: 13px; gap: 8px; } .crest { width: 36px; height: 44px; } .headerInner { min-height: 76px; gap: 12px; } .footer { padding-top: 52px; } .footerGrid { gap: 32px; padding-bottom: 40px; } .copyright { flex-direction: column; gap: 10px; } }
