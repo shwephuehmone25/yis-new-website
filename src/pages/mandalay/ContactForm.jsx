@@ -1,25 +1,9 @@
-import { useState } from 'react';
-import Button from '../../components/ui/Button';
-import styles from './Mandalay.module.css';
+import { useState } from "react";
+import Button from "../../components/ui/Button";
+import styles from "./Mandalay.module.css";
 
 export default function ContactForm() {
-  const [draft, setDraft] = useState('');
-  function prepareMessage(event) {
-    event.preventDefault();
-    const values = new FormData(event.currentTarget);
-    const body = `${values.get('message')}\n\nFrom: ${values.get('firstName')} ${values.get('lastName')}\nEmail: ${values.get('email')}`;
-    setDraft(`mailto:admissions.mdy@yismyanmar.com?subject=${encodeURIComponent(values.get('subject'))}&body=${encodeURIComponent(body)}`);
-  }
-  return <form className={styles.contactForm} onSubmit={prepareMessage} onChange={() => setDraft('')}>
-    <h3>Send a message</h3>
-    <div className={styles.nameFields}>
-      <label>First name<input name="firstName" placeholder="First Name" autoComplete="given-name" required maxLength={80} /></label>
-      <label>Last name<input name="lastName" placeholder="Last Name" autoComplete="family-name" required maxLength={80} /></label>
-    </div>
-    <label>Email<input name="email" type="email" placeholder="you@email.com" autoComplete="email" required /></label>
-    <label>Subject<input name="subject" placeholder="Admissions enquiry..." required maxLength={160} /></label>
-    <label>Message<textarea name="message" placeholder="Your message..." rows={5} required maxLength={3000} /></label>
-    <Button type="submit">Send message</Button>
-    {draft && <p className={styles.formStatus} role="status">Your message is ready, but has not been sent. <a href={draft}>Open your email app to send it.</a></p>}
-  </form>;
+  const [draft,setDraft]=useState("");
+  function prepareMessage(event){event.preventDefault();const v=new FormData(event.currentTarget);const body=`Tour date: ${v.get("date")}\nGrade: ${v.get("grade")}\nPhone: ${v.get("phone")}\n\n${v.get("message")}\n\nFrom: ${v.get("firstName")} ${v.get("lastName")}\nEmail: ${v.get("email")}`;setDraft(`mailto:admissions.mdy@yismyanmar.com?subject=${encodeURIComponent("Campus tour request")}&body=${encodeURIComponent(body)}`)}
+  return <form className={styles.contactForm} onSubmit={prepareMessage} onChange={()=>setDraft("")}><h3>Tour request form</h3><div className={styles.formGrid}><label>First name<input name="firstName" placeholder="First Name" required/></label><label>Last name<input name="lastName" placeholder="Last Name" required/></label><label>Email<input name="email" type="email" placeholder="you@email.com" required/></label><label>Phone<input name="phone" type="tel" placeholder="Mobile number" required/></label><label>Preferred tour date<input name="date" type="date" required/></label><label>Grade level<select name="grade" defaultValue=""><option value="" disabled>Select grade</option><option>Early childhood</option><option>Elementary</option><option>Secondary</option></select></label><label className={styles.full}>Questions or comments<textarea name="message" rows="4" placeholder="Tell us what brought you to YIS Mandalay..."/></label></div><Button type="submit">Submit tour request</Button>{draft&&<p className={styles.formStatus} role="status">Your request is ready, but has not been sent. <a href={draft}>Open your email app to send it.</a></p>}</form>;
 }
