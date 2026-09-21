@@ -84,7 +84,7 @@ import styles from './Layout.module.css';
 export default function Header({ onAction }) {
   return <header id="home"><a className={styles.skipLink} href="#main">Skip to content</a>
     <div className={styles.topbar}><Container className={styles.topbarInner}>
-      <div className={styles.emails}><a href="mailto:info@yis.edu.mm">Yangon: info@yis.edu.mm</a><a href="mailto:mandalay@yis.edu.mm">Mandalay: mandalay@yis.edu.mm</a></div>
+      <div className={styles.emails}><a href="mailto:admissions.ygn@yis-yangon.edu.mm">Yangon: admissions.ygn@yis-yangon.edu.mm</a><a href="mailto:admissions.mdy@yismyanmar.com">Mandalay: admissions.mdy@yismyanmar.com</a></div>
       <div className={styles.topActions}><button onClick={() => onAction('Sign In')}>Sign In</button><a href="#admissions">Apply Now</a></div>
     </Container></div><Container className={styles.headerInner}><Brand /><Navigation /></Container>
   </header>;
@@ -201,7 +201,7 @@ export default function ActionDialog({ action, onClose }) {
   useEffect(() => { if (action && !ref.current.open) ref.current.showModal(); }, [action]);
   return <dialog ref={ref} className={styles.dialog} onCancel={onClose} onClose={onClose} aria-labelledby="action-title">
     <h2 id="action-title">{action}</h2><p>This {action?.toLowerCase().includes('video') ? 'video' : 'destination'} has not been provided yet. Please contact the school for details.</p>
-    <a href="mailto:info@yis.edu.mm">info@yis.edu.mm</a><Button onClick={() => ref.current.close()}>Close</Button>
+    <a href="mailto:admissions.ygn@yis-yangon.edu.mm">admissions.ygn@yis-yangon.edu.mm</a><Button onClick={() => ref.current.close()}>Close</Button>
   </dialog>;
 }
 ```

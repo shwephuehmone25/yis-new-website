@@ -8,9 +8,18 @@
   font-display: swap;
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-.scroll-reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease var(--reveal-delay, 0ms), transform .7s cubic-bezier(.2,.75,.25,1) var(--reveal-delay, 0ms); }
+html { scroll-behavior: auto; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: clip; }
+.scroll-reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s cubic-bezier(.16,1,.3,1) var(--reveal-delay, 0ms), transform .8s cubic-bezier(.16,1,.3,1) var(--reveal-delay, 0ms); will-change: opacity, transform; }
+.scroll-reveal-item { --reveal-delay: calc(var(--reveal-order, 0) * 85ms); }
 .scroll-reveal.scroll-reveal-visible { opacity: 1; transform: translateY(0); }
+.scroll-reveal-visible { will-change: auto; }
+:where([class*="Grid"], [class*="grid"]) > :is(article, blockquote) { transition-duration: .6s; transition-timing-function: cubic-bezier(.16,1,.3,1); }
+:where([class*="Grid"], [class*="grid"]) > :is(article, blockquote):hover { transform: translateY(-4px) !important; }
+:where([class*="Grid"], [class*="grid"]) > article img { transition: transform .8s cubic-bezier(.16,1,.3,1); }
+:where([class*="Grid"], [class*="grid"]) > article:hover img { transform: scale(1.05); }
 body { margin: 0; color: var(--text); font-family: 'Quicksand', Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
 body p, body a, body button, body input, body select, body textarea, body label, body li, body address, body blockquote, body figcaption, body dt, body dd { font-family: 'Quicksand', Arial, Helvetica, sans-serif !important; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Keep Calm Heavy', Arial, Helvetica, sans-serif !important; font-weight: 800; }

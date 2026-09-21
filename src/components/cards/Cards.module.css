@@ -1,6 +1,8 @@
-.campus { background: white; box-shadow: var(--card-shadow); overflow: hidden; border-radius: var(--radius) var(--radius) 0 0; }
-.cardImage { position: relative; }
-.cardImage > img { width: 100%; height: 220px; object-fit: cover; }
+.campus { background: white; box-shadow: var(--card-shadow); overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius) var(--radius) 0 0; transition: transform .6s cubic-bezier(.16,1,.3,1), border-color .6s ease, box-shadow .6s ease; }
+.cardImage { position: relative; overflow: hidden; }
+.cardImage > img { width: 100%; height: 220px; object-fit: cover; transition: transform .8s cubic-bezier(.16,1,.3,1); }
+.campus:hover { transform: translateY(-3px); border-color: var(--gold); box-shadow: 0 20px 44px rgb(79 14 16 / 11%); }
+.campus:hover .cardImage > img { transform: scale(1.05); }
 .campusBody { padding: 24px; }
 .campus h3 { color: var(--red); text-transform: uppercase; font-size: 26px; letter-spacing: 1px; }
 .campus h3::after { content: ''; display: block; width: 36px; height: 2px; background: var(--gold); margin-block: 14px; }
@@ -16,7 +18,7 @@
 .program p { color: var(--muted); font-size: 14px; line-height: 1.65; margin-block: 22px 30px; }
 .density { position: absolute; right: 30px; bottom: 30px; left: 30px; display: flex; gap: 6px; flex-wrap: wrap; padding-top: 18px; border-top: 1px solid rgb(164 116 33 / 12%); font-size: 11px; }
 .density > span { color: #c77f06; font-weight: 700; text-transform: uppercase; }
-.program:hover { transform: translateY(-10px); border-color: rgb(164 116 33 / 50%); box-shadow: 0 26px 54px rgb(79 14 16 / 14%); }
+.program:hover { transform: translateY(-4px); border-color: var(--gold); box-shadow: 0 22px 48px rgb(79 14 16 / 12%); }
 .program:hover::before { transform: scale(1.45) translate(-12px, 12px); }
 .program:hover::after { width: 100%; }
 .program:hover .programNumber { color: var(--gold); transform: translateX(6px); }
@@ -46,10 +48,10 @@
 .editorial:not(.news) p { flex: 1; }
 .editorial:not(.news) .actions a, .editorial:not(.news) .actions button { gap: 10px; border-radius: 999px; padding-inline: 22px; transition: gap .3s ease, transform .3s ease, background .3s ease; }
 .editorial:not(.news) .actions a::after, .editorial:not(.news) .actions button::after { content: '→'; font-size: 17px; line-height: 1; }
-.editorial:not(.news):hover { transform: translateY(-12px); box-shadow: 0 28px 58px rgb(79 14 16 / 17%); }
+.editorial:not(.news):hover { transform: translateY(-4px); box-shadow: 0 24px 52px rgb(79 14 16 / 14%); }
 .editorial:not(.news):hover::before { transform: translate(-5px, -5px); background: rgb(248 158 16 / 7%); }
 .editorial:not(.news):hover::after { right: 18px; width: 92px; }
-.editorial:not(.news):hover .cardImage > img { transform: scale(1.075); filter: saturate(1.08) contrast(1.03); }
+.editorial:not(.news):hover .cardImage > img { transform: scale(1.05); filter: saturate(1.05) contrast(1.02); }
 .editorial:not(.news):hover .cardImage::after { opacity: 1; }
 .editorial:not(.news):hover .campusBody::before { width: calc(100% - 60px); }
 .editorial:not(.news):hover h3 { color: var(--red); transform: translateX(4px); }
@@ -67,11 +69,11 @@
 .news .actions a, .news .actions button { position: relative; gap: 8px; overflow: visible; }
 .news .actions a::after, .news .actions button::after { content: '↗'; display: inline-block; font-size: 16px; transition: transform .35s ease; }
 .news .actions a::before, .news .actions button::before { content: ''; position: absolute; right: 0; bottom: 4px; left: 0; height: 1px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .35s ease; }
-.news:hover { transform: translateY(-10px); }
+.news:hover { transform: translateY(-4px); }
 .news:hover::before { inset: 58px -8px -8px; box-shadow: 0 24px 52px rgb(79 14 16 / 13%); }
 .news:hover .cardImage { border-radius: 16px 16px 5px 5px; box-shadow: 0 16px 34px rgb(79 14 16 / 18%); }
 .news:hover .cardImage::after { opacity: 1; }
-.news:hover .cardImage > img { transform: scale(1.075); filter: saturate(1.08) contrast(1.04); }
+.news:hover .cardImage > img { transform: scale(1.05); filter: saturate(1.05) contrast(1.02); }
 .news:hover h3 { color: var(--red); transform: translateX(4px); }
 .news:hover h3::after { width: 62px; }
 .news:hover .actions a::after, .news:hover .actions button::after { transform: translate(3px, -3px); }

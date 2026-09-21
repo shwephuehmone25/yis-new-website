@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import MainLayout from "../components/layout/MainLayout";
 import Container from "../components/ui/Container";
 import Section from "../components/ui/Section";
@@ -9,6 +8,7 @@ import ProgramCard from "../components/cards/ProgramCard";
 import AccreditationBadge from "../components/cards/AccreditationBadge";
 import { partners } from "../data/partners";
 import styles from "./HomePage.module.css";
+import useScrollEffects from "../hooks/useScrollEffects";
 
 const MANDALAY_CAMPUS_VIDEO = "https://www.youtube.com/watch?v=lxdT8bA1T14";
 const YANGON_CAMPUS_VIDEO = "https://www.youtube.com/watch?v=RGbOVaR1UsQ";
@@ -184,32 +184,7 @@ function Accreditations() {
   );
 }
 export default function HomePage() {
-  useEffect(() => {
-    const prefersReducedMotion =
-      window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
-    const sections = document.querySelectorAll(
-      "#main > section:not(:first-child) > div",
-    );
-    let observer;
-
-    if (!prefersReducedMotion && "IntersectionObserver" in window) {
-      sections.forEach((section) => section.classList.add(styles.reveal));
-      observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add(styles.revealVisible);
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.12, rootMargin: "0px 0px -55px" },
-      );
-      sections.forEach((section) => observer.observe(section));
-    }
-
-    return () => observer?.disconnect();
-  }, []);
+  useScrollEffects();
 
   return (
     <MainLayout>
