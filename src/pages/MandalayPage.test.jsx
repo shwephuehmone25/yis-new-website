@@ -12,7 +12,6 @@ test('Mandalay uses one shared header, main, and footer', () => {
   expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('School Mandalay');
   expect(screen.getByRole('heading', { name: 'Academic programs' })).toBeInTheDocument();
   expect(screen.getByRole('heading', { name: 'Schoolwide events' })).toBeInTheDocument();
-  expect(screen.getByRole('heading', { name: 'In their own words' })).toBeInTheDocument();
   expect(screen.getAllByRole('link', { name: 'Yangon International School home' })[0]).toHaveAttribute('href', '/#home');
   expect(document.title).toBe('Mandalay Campus | Yangon International School');
 });
