@@ -183,7 +183,7 @@ function Tour() {
             <address>
               <b>YIS Mandalay</b>
               <br />
-              MA-42, Between 42nd St & 43rd St, Between 52nd St & East Circular Rd Ye Mon,
+              MA-42, Between 42nd Street & 43rd Street, Between 52nd Street & East Circular Road (Mandalay-Pyin Oo Lwin Road), Ye Mon Taung Quarter,
               <br />
               Mahar Aung Myay Township, Mandalay
               <br />
