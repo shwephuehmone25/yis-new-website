@@ -13,7 +13,7 @@ import useScrollEffects from "../hooks/useScrollEffects";
 const MANDALAY_CAMPUS_VIDEO = "https://www.youtube.com/watch?v=lxdT8bA1T14";
 const YANGON_CAMPUS_VIDEO = "https://www.youtube.com/watch?v=RGbOVaR1UsQ";
 const vision =
-  "YIS prepares students for higher levels of learning and to be responsible global citizens who are equipped with the skills, knowledge, and character to thrive in an interconnected world.";
+  "YIS prepares students for higher levels of learning and to be responsible global citizens.";
 const stats = [
   ["2", "State-of-the-art campuses"],
   ["1,200+", "Enrolled students"],
@@ -71,6 +71,26 @@ function SchoolStats() {
     </section>
   );
 }
+function AboutUs() {
+  return (
+    <section id="about" className={styles.about} aria-labelledby="about-title">
+      <Container className={styles.aboutInner}>
+        <figure className={styles.aboutImage}>
+          <img src="/mandalay/about-yis.webp" alt="A YIS teacher supporting a student in the classroom" loading="lazy" />
+          <figcaption><strong>2004</strong><span>Yangon campus established</span></figcaption>
+        </figure>
+        <div className={styles.aboutContent}>
+          <span>About YIS</span>
+          <h2 id="about-title">Yangon International School</h2>
+          <i aria-hidden="true" />
+          <p>
+            Yangon International School is a college preparatory group of schools. The Yangon Campus was established in 2004. For over 15 years, we have been committed to delivering the highest level of education for our students. We are proud to be opening the Mandalay Campus this year to expand the reach of our dedication to lifelong learning to more students across Myanmar.
+          </p>
+        </div>
+      </Container>
+    </section>
+  );
+}
 function Campuses({ onAction }) {
   return (
     <Section id="campuses" narrow>
@@ -83,7 +103,7 @@ function Campuses({ onAction }) {
           name="Yangon"
           image="https://yis.edu.mm/wp-content/uploads/2025/12/YIS_933x700.webp"
           videoHref={YANGON_CAMPUS_VIDEO}
-          description="Creating the leaders of tomorrow for over 15 years, our Yangon campus features internationally certified faculty and a rich tradition of learning."
+          description="Our Yangon campus has been creating the leaders of tomorrow for over 15 years. Our international, certified teaching faculty and local support staff create a winning environment for every student."
           onAction={onAction}
         />
         <CampusCard
@@ -91,7 +111,7 @@ function Campuses({ onAction }) {
           href="/mandalay"
           image="/mandalay/mdy.jpg"
           videoHref={MANDALAY_CAMPUS_VIDEO}
-          description="Our Mandalay campus offers a state-of-the-art facility with world-class teachers dedicated to academic excellence and holistic development."
+          description="Opening this year in a state-of-the-art facility with world-class teachers, following the learning philosophy and dedication to students that has helped YIS to be so well regarded as a learning institution."
           onAction={onAction}
         />
       </div>
@@ -100,7 +120,7 @@ function Campuses({ onAction }) {
 }
 function VisionMission() {
   return (
-    <section id="about" className={styles.values}>
+    <section className={styles.values}>
       <Container className={styles.valuesGrid}>
         <div>
           <h2>Our Vision</h2>
@@ -109,10 +129,7 @@ function VisionMission() {
         <div>
           <h2>Our Mission</h2>
           <p>
-            Yangon International School fosters the development of the whole
-            child — academically prepared, socially responsible, and culturally
-            sensitive — inspiring lifelong learning and positive contributions
-            to the global community.
+            YIS is a network of college preparatory schools that seeks to foster the development of the whole child, who is a participating global citizen and lifelong learner: one who is academically well-prepared, socially responsible, culturally sensitive, and personally fulfilled.
           </p>
         </div>
       </Container>
@@ -144,8 +161,8 @@ function Admissions({ onAction }) {
   return (
     <Section id="admissions">
       <SectionHeading title="Admissions">
-        We welcome families to visit our campuses and learn more about the YIS
-        educational experience.
+        The first step is to contact our admissions and to arrange a visit to truly understand how special our school is and what a wonderful place for your child to grow and develop into a leader of tomorrow.
+        <br></br>We look forward to welcoming you to our Campus
       </SectionHeading>
       <ol className={styles.steps}>
         {steps.map(([title, description], index) => (
@@ -173,7 +190,7 @@ function Accreditations() {
   return (
     <section className={styles.affiliations} id="community">
       <Container>
-        <h2>Affiliations &amp; Accreditations</h2>
+        <h2>Our Connections</h2>
         <div className={styles.affiliationGrid}>
           {partners.map((partner) => (
             <AccreditationBadge key={partner.acronym} {...partner} />
@@ -192,6 +209,7 @@ export default function HomePage() {
         <>
           <Hero />
           <SchoolStats />
+          <AboutUs />
           <Campuses onAction={onAction} />
           <VisionMission />
           <AcademicPrograms />

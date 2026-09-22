@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import styles from "./Layout.module.css";
 
-const homeLinks = [["Home", "home"], ["About Us", "/about"], ["Admissions", "admissions"], ["Learning", "learning"], ["Campuses", "campuses"], ["Community", "community"], ["Contacts", "contacts"]];
+const homeLinks = [["Home", "home"], ["About Us", "about"], ["Admissions", "admissions"], ["Learning", "learning"], ["Campuses", "campuses"], ["Community", "community"], ["Contacts", "contacts"]];
 const mandalayLinks = [
   { label: "About Us", children: [["About YIS", "/about"], ["Welcome Messages", "/welcome-messages"]] },
-  { label: "Admissions", children: [["Book A Tour", "/book-tour"], ["Apply To YIS", "/apply"], ["Admissions Guides & Req.", "admissions"], ["Contact the Team", "contact-mandalay"]] },
+  { label: "Admissions", children: [["Book A Tour", "/book-tour"], ["Apply To YIS", "/apply"], ["Admissions Guides & Req.", "/admissions"], ["Contact the Team", "/contact"]] },
   { label: "Student Life", children: [
     { label: "Academics", children: [["Elementary School", "learning"], ["Secondary School", "learning"], ["IB Diploma Programme", "learning"]] },
     ["Extra & Co-curricular Activities", "/activities"],
@@ -25,7 +25,16 @@ export default function Navigation() {
   const closeNavigation = () => { setOpen(false); setOpenSubmenu(null); setOpenNested(null); };
 
   return <nav aria-label="Main navigation" className={styles.navigation}>
-    <button className={styles.menuToggle} aria-expanded={open} aria-controls="main-navigation" onClick={() => setOpen(!open)}>{open ? "Close" : "Menu"}</button>
+    <button
+      type="button"
+      className={styles.menuToggle}
+      aria-label={open ? "Close menu" : "Menu"}
+      aria-expanded={open}
+      aria-controls="main-navigation"
+      onClick={() => setOpen(!open)}
+    >
+      {open ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+    </button>
     <ul id="main-navigation" className={`${styles.navLinks} ${open ? styles.open : ""} ${usesMandalayNavigation ? styles.mandalayNav : ""}`}>
       {usesMandalayNavigation ? mandalayLinks.map((item) => <li key={item.label} className={item.children ? styles.hasSubmenu : ""}>
         {item.children ? <>
