@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import MainLayout from "../components/layout/MainLayout";
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
@@ -137,7 +138,9 @@ function FindUs() {
               <MapPin />
               <span>
                 <b>Campus address</b>
-                MA-42, Between 42nd Street & 43rd Street, Between 52nd Street & East Circular Road (Mandalay-Pyin Oo Lwin Road), Ye Mon Taung Quarter,
+                MA-42, Between 42nd Street & 43rd Street, Between 52nd Street &
+                East Circular Road (Mandalay-Pyin Oo Lwin Road), Ye Mon Taung
+                Quarter,
                 <br />
                 Mahar Aung Myay Township, Mandalay
               </span>
@@ -155,16 +158,20 @@ function FindUs() {
               <b>Follow us</b>
               <nav aria-label="Social media">
                 <a
-                  href="https://www.facebook.com/YISMandalay"
+                  href="https://www.facebook.com/YISMandalay21C"
                   aria-label="Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  f
+                  <FaFacebookF aria-hidden="true" />
                 </a>
-                <a href="https://www.instagram.com" aria-label="Instagram">
-                  ◎
-                </a>
-                <a href="https://www.youtube.com" aria-label="YouTube">
-                  ▶
+                <a
+                  href="https://www.youtube.com/channel/UCnTUWGLkpL6SysjIyWabAUw/featured"
+                  aria-label="YouTube"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaYoutube aria-hidden="true" />
                 </a>
               </nav>
             </footer>
