@@ -118,7 +118,7 @@ function About() {
               Switzerland, and Japan are represented in the wealth of
               educational choices our students make.
             </p>
-            <Button href="#tour">Read more</Button>
+            <Button href="/about">Read more</Button>
           </div>
         </div>
       </Container>
