@@ -8,7 +8,8 @@ test('renders shared layout and home page sections', () => {
   expect(screen.getByRole('main')).toBeInTheDocument();
   expect(screen.getByRole('contentinfo')).toBeInTheDocument();
   expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Progress ThroughEducation');
-  ['Our Campuses', 'Our Vision', 'Our Mission', 'Academic Programs', 'Admissions', 'Affiliations & Accreditations'].forEach(name => expect(screen.getByRole('heading', { name })).toBeInTheDocument());
+  ['Yangon International School', 'Our Campuses', 'Our Vision', 'Our Mission', 'Academic Programs', 'Admissions', 'Our Connections'].forEach(name => expect(screen.getByRole('heading', { name })).toBeInTheDocument());
+  expect(screen.getByRole('link', { name: 'About Us' })).toHaveAttribute('href', '/#about');
   expect(screen.getAllByRole('article')).toHaveLength(6);
 });
 
