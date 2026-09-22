@@ -20,7 +20,11 @@ export default function Header({ onAction }) {
           </div>
           <div className={styles.topActions}>
             <button onClick={() => onAction("Sign In")}>Sign In</button>
-            <a href="https://yismandalay.openapply.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://yismandalay.openapply.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Apply Now
             </a>
           </div>

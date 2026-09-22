@@ -1,3 +1,218 @@
-.hero{position:relative;height:360px;display:grid;place-items:center;overflow:hidden}.hero:after{content:"";position:absolute;inset:0;background:rgba(35,21,22,.48)}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%}.hero>div{position:relative;z-index:1;text-align:center}.hero h1{color:#fff;font-size:53px;letter-spacing:5px;text-transform:uppercase}.hero span{display:block;width:50px;height:3px;margin:20px auto 0;background:var(--gold)}.content{padding:80px 0;background:#fdfbf7}.content>div{display:grid;grid-template-columns:.72fr 1.45fr;gap:42px;align-items:start}.copy{padding-top:10px}.copy small{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase}.copy h2{margin-top:12px;color:var(--red);font-size:39px;text-transform:uppercase}.copy>i,.content form>i{display:block;width:40px;height:2px;margin:18px 0 28px;background:var(--gold)}.copy>p{margin-bottom:22px;color:#666;font-size:15px;line-height:1.8}.copy address{display:grid;gap:18px;margin-top:35px;padding:25px;border:1px solid #e7e1d8;background:#fff;font-style:normal}.copy address span{display:flex;gap:12px;color:#777;font-size:12px;line-height:1.6}.copy address svg{flex:0 0 auto;width:16px;color:var(--red)}.content form{padding:35px;border:1px solid #e7e1d8;background:#fff}.content form h2{color:var(--red);font-size:24px;text-transform:uppercase}.formGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px 14px}.formGrid label{display:grid;gap:8px;color:#999;font-size:9px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}.formGrid input,.formGrid select,.formGrid textarea{width:100%;min-width:0;padding:13px;border:1px solid #ded9d2;background:#fdfcf9;color:#555;font:12px Arial,sans-serif}.full{grid-column:1/-1}.campus{display:grid;gap:12px;padding:18px;border:1px solid #e3ded7;color:#777;font-size:12px}.campus b{color:#999;font-size:9px;letter-spacing:1.5px;text-transform:uppercase}.campus span{color:var(--red)}.content form>button{width:100%;margin-top:25px}.status{margin-top:14px;color:#777;font-size:12px}.status a{color:var(--red);text-decoration:underline}.content form,.copy address{transition:transform .35s ease,box-shadow .35s ease}.content form:hover{transform:translateY(-6px);box-shadow:0 20px 45px rgba(79,14,16,.09)}.copy address:hover{transform:translateX(6px);box-shadow:0 12px 28px rgba(79,14,16,.07)}
-@media(max-width:900px){.content>div{grid-template-columns:1fr}.copy{max-width:650px}.formGrid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.hero{height:250px}.hero h1{font-size:36px}.content{padding:55px 0}.copy h2{font-size:32px}.content form{padding:22px}.formGrid{grid-template-columns:1fr}.full{grid-column:auto}}
+.hero {
+  position: relative;
+  height: 360px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(35, 21, 22, 0.48);
+}
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+}
+.hero > div {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.hero h1 {
+  color: #fff;
+  font-size: 53px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.hero span {
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 20px auto 0;
+  background: var(--gold);
+}
+.content {
+  padding: 80px 0;
+  background: #fdfbf7;
+}
+.content > div {
+  display: grid;
+  grid-template-columns: 0.72fr 1.45fr;
+  gap: 42px;
+  align-items: start;
+}
+.copy {
+  padding-top: 10px;
+}
+.copy small {
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.copy h2 {
+  margin-top: 12px;
+  color: var(--red);
+  font-size: 39px;
+  text-transform: uppercase;
+}
+.copy > i,
+.content form > i {
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 18px 0 28px;
+  background: var(--gold);
+}
+.copy > p {
+  margin-bottom: 22px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.copy address {
+  display: grid;
+  gap: 18px;
+  margin-top: 35px;
+  padding: 25px;
+  border: 1px solid #e7e1d8;
+  background: #fff;
+  font-style: normal;
+}
+.copy address span {
+  display: flex;
+  gap: 12px;
+  color: #777;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.copy address svg {
+  flex: 0 0 auto;
+  width: 16px;
+  color: var(--red);
+}
+.content form {
+  padding: 35px;
+  border: 1px solid #e7e1d8;
+  background: #fff;
+}
+.content form h2 {
+  color: var(--red);
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px 14px;
+}
+.formGrid label {
+  display: grid;
+  gap: 8px;
+  color: #999;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.formGrid input,
+.formGrid select,
+.formGrid textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #ded9d2;
+  background: #fdfcf9;
+  color: #555;
+  font:
+    12px Arial,
+    sans-serif;
+}
+.full {
+  grid-column: 1/-1;
+}
+.campus {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid #e3ded7;
+  color: #777;
+  font-size: 12px;
+}
+.campus b {
+  color: #999;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.campus span {
+  color: var(--red);
+}
+.content form > button {
+  width: 100%;
+  margin-top: 25px;
+}
+.status {
+  margin-top: 14px;
+  color: #777;
+  font-size: 12px;
+}
+.status a {
+  color: var(--red);
+  text-decoration: underline;
+}
+.content form,
+.copy address {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+.content form:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(79, 14, 16, 0.09);
+}
+.copy address:hover {
+  transform: translateX(6px);
+  box-shadow: 0 12px 28px rgba(79, 14, 16, 0.07);
+}
+@media (max-width: 900px) {
+  .content > div {
+    grid-template-columns: 1fr;
+  }
+  .copy {
+    max-width: 650px;
+  }
+  .formGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    height: 250px;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .content {
+    padding: 55px 0;
+  }
+  .copy h2 {
+    font-size: 32px;
+  }
+  .content form {
+    padding: 22px;
+  }
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  .full {
+    grid-column: auto;
+  }
+}

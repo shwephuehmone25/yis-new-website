@@ -3,7 +3,9 @@ import Lenis from "lenis";
 
 export default function useScrollEffects() {
   useEffect(() => {
-    const reduced = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    const reduced = window.matchMedia?.(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     let lenis;
     let animationFrame;
 
@@ -34,9 +36,14 @@ export default function useScrollEffects() {
       }
     }
 
-    const headings = [...document.querySelectorAll("#main > section:not(:first-child) h2")];
-    const grids = [...document.querySelectorAll('[class*="Grid"], [class*="grid"], [class*="Strip"], [class*="steps"]')]
-      .filter((grid) => grid.closest("#main") && grid.children.length > 1);
+    const headings = [
+      ...document.querySelectorAll("#main > section:not(:first-child) h2"),
+    ];
+    const grids = [
+      ...document.querySelectorAll(
+        '[class*="Grid"], [class*="grid"], [class*="Strip"], [class*="steps"]',
+      ),
+    ].filter((grid) => grid.closest("#main") && grid.children.length > 1);
     const items = grids.flatMap((grid) => [...grid.children]);
     const targets = [...new Set([...headings, ...items])];
     headings.forEach((target) => target.classList.add("scroll-reveal"));
@@ -47,24 +54,36 @@ export default function useScrollEffects() {
     });
     let observer;
     if (reduced || !("IntersectionObserver" in window)) {
-      targets.forEach((target) => target.classList.add("scroll-reveal-visible"));
+      targets.forEach((target) =>
+        target.classList.add("scroll-reveal-visible"),
+      );
     } else {
-      observer = new IntersectionObserver(entries => entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("scroll-reveal-visible");
-          observer.unobserve(entry.target);
-        }
-      }), { threshold: .12, rootMargin: "0px 0px -8%" });
-      targets.forEach(target => observer.observe(target));
+      observer = new IntersectionObserver(
+        (entries) =>
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("scroll-reveal-visible");
+              observer.unobserve(entry.target);
+            }
+          }),
+        { threshold: 0.12, rootMargin: "0px 0px -8%" },
+      );
+      targets.forEach((target) => observer.observe(target));
     }
     return () => {
       observer?.disconnect();
       targets.forEach((target) => {
-        target.classList.remove("scroll-reveal", "scroll-reveal-item", "scroll-reveal-visible");
+        target.classList.remove(
+          "scroll-reveal",
+          "scroll-reveal-item",
+          "scroll-reveal-visible",
+        );
         target.style.removeProperty("--reveal-order");
       });
-      if (typeof animationFrame === "number") cancelAnimationFrame(animationFrame);
-      if (animationFrame?.gsap) animationFrame.gsap.ticker.remove(animationFrame.tick);
+      if (typeof animationFrame === "number")
+        cancelAnimationFrame(animationFrame);
+      if (animationFrame?.gsap)
+        animationFrame.gsap.ticker.remove(animationFrame.tick);
       lenis?.destroy();
     };
   }, []);

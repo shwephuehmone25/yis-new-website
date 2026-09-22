@@ -1,7 +1,603 @@
-.backdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}.hero{position:relative;isolation:isolate;min-height:520px;display:flex;align-items:flex-end;padding:0 0 74px;color:#fff}.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(24,12,13,.68),rgba(24,12,13,.08) 72%)}.hero span,.heading>span,.enrollment>div>span{display:block;margin-bottom:10px;color:var(--gold);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase}.hero h1{max-width:670px;font-size:56px;line-height:1.06;letter-spacing:.5px;text-transform:uppercase}.heading{text-align:center;margin-bottom:42px}.heading h2{color:var(--red);font-size:34px;line-height:1.1;text-transform:uppercase}.heading i{display:block;width:36px;height:2px;background:var(--gold);margin:14px auto 0}.heading.light h2{color:#fff}.glance,.connections,.testimonials{padding:76px 0;background:#fff}.glanceGrid{display:grid;grid-template-columns:repeat(3,1fr)}.glanceGrid article{padding:8px 48px;text-align:center;border-right:1px solid var(--border)}.glanceGrid article:last-child{border:0}.glanceGrid svg{width:28px;color:var(--red)}.glanceGrid article:nth-child(2) svg{color:var(--gold)}.glanceGrid h3{margin:18px 0;color:var(--red);font-size:12px;text-transform:uppercase}.glanceGrid article div{color:var(--muted);font-size:13px;line-height:1.7}.glanceGrid strong{font-size:36px;color:var(--red);margin:0 6px}.glanceGrid em{display:inline-block;font-style:normal;font-size:9px;text-transform:uppercase}.about,.tour,.events{padding:82px 0;background:#fbf8f3}.aboutGrid,.tourGrid{display:grid;grid-template-columns:1fr 1.08fr;gap:72px;align-items:center}.aboutImage{position:relative}.aboutImage img{width:100%;height:410px;object-fit:cover}.aboutImage b{position:absolute;right:-1px;bottom:0;display:grid;width:125px;height:105px;place-content:center;background:var(--red);color:#fff;font-size:31px;text-align:center}.aboutImage small{display:block;font-size:9px;letter-spacing:2px;text-transform:uppercase}.aboutGrid .heading,.tourGrid .heading{text-align:left;margin-bottom:24px}.aboutGrid .heading i,.tourGrid .heading i{margin-left:0}.aboutGrid p,.tourGrid>div>p{margin-bottom:16px;color:var(--muted);font-size:15px;line-height:1.75}.aboutGrid a{margin-top:8px}.programs{padding:78px 0 84px;background:#a71720}.cardGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.programs :global(article){border-radius:0!important}.programs :global(article:before),.programs :global(article:after){display:none}.programs :global(article:hover){transform:translateY(-6px)}.programs :global(article>div:first-child),.programs :global(article>div:first-child img){border-radius:0!important}.programs :global(article>div:last-child){min-height:250px!important;border-radius:0!important;padding:23px!important}.programs :global(article>div:first-child img){height:175px!important}.connections>div>.heading{margin-bottom:26px}.connections>div>div:last-child{display:flex;justify-content:center;align-items:center;gap:30px;flex-wrap:wrap}.connections :global(article){min-width:120px}.tourGrid{align-items:start}.tourGrid address{margin-top:26px;padding:20px;background:#fff;color:var(--muted);font-size:13px;line-height:1.7;font-style:normal}.tourGrid address b{color:var(--red)}.contactForm{display:grid;gap:20px;padding:32px;background:#fff;border:1px solid #eee9e0;box-shadow:0 10px 35px rgba(88,40,20,.05)}.contactForm h3{padding-bottom:14px;border-bottom:1px solid var(--border);color:var(--red);font-size:16px;text-transform:uppercase}.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.contactForm label{display:grid;gap:7px;color:#8b8178;font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase}.contactForm input,.contactForm select,.contactForm textarea{width:100%;min-width:0;padding:12px;border:1px solid #e9e4dc;background:#fdfcf9;color:var(--text);font:13px Arial,sans-serif}.full{grid-column:1/-1}.contactForm button{width:100%}.formStatus{font-size:13px}.formStatus a{text-decoration:underline}.enrollment{position:relative;isolation:isolate;padding:85px 0;text-align:center;color:#fff}.enrollment:after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(158,18,26,.84)}.enrollment h2{font-size:46px;line-height:1.05;text-transform:uppercase}.enrollment p{max-width:680px;margin:20px auto 28px;font-size:15px;line-height:1.7}.enrollment>div>div{display:flex;justify-content:center;gap:12px}.enrollment a{min-width:210px}.events .heading{text-align:left;margin-bottom:26px}.events .heading i{margin-left:0}.notice{padding:14px 18px;border-left:3px solid var(--gold);background:#eee8df;color:#8b8178;font-size:12px}.events h3{margin:34px 0 14px;color:var(--red);font-size:18px;text-transform:uppercase}.eventFilters{display:flex;gap:30px;padding-bottom:12px;border-bottom:1px solid var(--border);font-size:10px;text-transform:uppercase}.eventFilters b{color:var(--red)}.events ol{padding:0;margin:0;list-style:none}.events li{display:grid;grid-template-columns:90px 1fr;padding:16px 12px;border-bottom:1px solid #eee6dc;font-size:13px}.events li:nth-child(even){background:#f7efe5}.events time{color:var(--red);font-weight:700;text-transform:uppercase}.quoteGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.quoteGrid blockquote{position:relative;min-height:230px;margin:0;padding:28px;background:#fdfbf8}.quoteGrid>blockquote>svg{width:15px;color:var(--gold)}.quoteGrid blockquote>p{margin:16px 0 24px;color:#67615c;font:italic 13px/1.7 Georgia,serif}.quoteGrid footer{display:flex;gap:10px;align-items:center}.quoteGrid footer>span{display:grid;width:32px;height:32px;place-content:center;border-radius:50%;background:var(--red);color:#fff}.quoteGrid footer b{font-size:10px;text-transform:uppercase}.quoteGrid footer small{display:block;margin-top:3px;color:var(--gold);font-size:8px}.visitYangon{display:flex;justify-content:space-between;align-items:end;margin-top:54px}.visitYangon>span{color:var(--text);font-size:19px;font-weight:700;text-transform:uppercase}.visitYangon small{display:block;margin-bottom:6px;color:var(--gold);font-size:9px;letter-spacing:2px}.visitYangon a{min-width:180px}
-.quoteAuthor{display:flex;gap:10px;align-items:center}.quoteAuthor>span{display:grid;width:32px;height:32px;place-content:center;border-radius:50%;background:var(--red);color:#fff}.quoteAuthor b{font-size:10px;text-transform:uppercase}.quoteAuthor small{display:block;margin-top:3px;color:var(--gold);font-size:8px}
-.reveal{opacity:0;transform:translateY(42px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.75,.25,1)}.revealVisible{opacity:1;transform:translateY(0)}
-.glanceGrid article,.quoteGrid blockquote,.events li{transition:transform .35s ease,box-shadow .35s ease,background .35s ease}.glanceGrid article:hover{transform:translateY(-8px);background:#fff;box-shadow:0 18px 38px rgba(79,14,16,.09)}.glanceGrid article:hover h3{color:var(--gold)}.quoteGrid blockquote:hover{transform:translateY(-8px);background:#fff;box-shadow:0 18px 42px rgba(79,14,16,.11)}.events li:hover{position:relative;z-index:1;transform:translateX(8px);background:#fff;box-shadow:0 8px 24px rgba(79,14,16,.08)}
-@media(max-width:900px){.hero{min-height:460px}.hero h1{font-size:45px}.aboutGrid,.tourGrid{grid-template-columns:1fr;gap:38px}.aboutImage{max-width:620px}.cardGrid,.quoteGrid{grid-template-columns:1fr 1fr}.glanceGrid article{padding-inline:22px}}
-@media(max-width:600px){.hero{min-height:400px;padding-bottom:44px}.hero h1{font-size:34px}.hero .backdrop{object-position:62% center}.heading h2{font-size:27px}.glance,.connections,.testimonials,.about,.tour,.events,.programs{padding:58px 0}.glanceGrid,.cardGrid,.quoteGrid{grid-template-columns:1fr}.glanceGrid article{padding:28px 10px;border-right:0;border-bottom:1px solid var(--border)}.aboutImage img{height:320px}.aboutImage b{width:105px;height:90px}.formGrid{grid-template-columns:1fr}.full{grid-column:auto}.contactForm{padding:22px}.enrollment h2{font-size:35px}.enrollment>div>div{flex-direction:column}.enrollment a{width:100%}.events li{grid-template-columns:74px 1fr}.visitYangon{align-items:flex-start;flex-direction:column;gap:22px;width:100%}.visitYangon a{width:100%}}
-@media(prefers-reduced-motion:reduce){.reveal,.revealVisible{opacity:1;transform:none;transition:none}}
+.backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 520px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 74px;
+  color: #fff;
+}
+.hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(24, 12, 13, 0.68),
+    rgba(24, 12, 13, 0.08) 72%
+  );
+}
+.hero span,
+.heading > span,
+.enrollment > div > span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.hero h1 {
+  max-width: 670px;
+  font-size: 56px;
+  line-height: 1.06;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 42px;
+}
+.heading h2 {
+  color: var(--red);
+  font-size: 34px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.heading i {
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: var(--gold);
+  margin: 14px auto 0;
+}
+.heading.light h2 {
+  color: #fff;
+}
+.glance,
+.connections,
+.testimonials {
+  padding: 76px 0;
+  background: #fff;
+}
+.glanceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.glanceGrid article {
+  padding: 8px 48px;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+.glanceGrid article:last-child {
+  border: 0;
+}
+.glanceGrid svg {
+  width: 28px;
+  color: var(--red);
+}
+.glanceGrid article:nth-child(2) svg {
+  color: var(--gold);
+}
+.glanceGrid h3 {
+  margin: 18px 0;
+  color: var(--red);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.glanceGrid article div {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.glanceGrid strong {
+  font-size: 36px;
+  color: var(--red);
+  margin: 0 6px;
+}
+.glanceGrid em {
+  display: inline-block;
+  font-style: normal;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+.about,
+.tour,
+.events {
+  padding: 82px 0;
+  background: #fbf8f3;
+}
+.aboutGrid,
+.tourGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr;
+  gap: 72px;
+  align-items: center;
+}
+.aboutImage {
+  position: relative;
+}
+.aboutImage img {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+}
+.aboutImage b {
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  display: grid;
+  width: 125px;
+  height: 105px;
+  place-content: center;
+  background: var(--red);
+  color: #fff;
+  font-size: 31px;
+  text-align: center;
+}
+.aboutImage small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.aboutGrid .heading,
+.tourGrid .heading {
+  text-align: left;
+  margin-bottom: 24px;
+}
+.aboutGrid .heading i,
+.tourGrid .heading i {
+  margin-left: 0;
+}
+.aboutGrid p,
+.tourGrid > div > p {
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+.aboutGrid a {
+  margin-top: 8px;
+}
+.programs {
+  padding: 78px 0 84px;
+  background: #a71720;
+}
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.programs :global(article) {
+  border-radius: 0 !important;
+}
+.programs :global(article:before),
+.programs :global(article:after) {
+  display: none;
+}
+.programs :global(article:hover) {
+  transform: translateY(-6px);
+}
+.programs :global(article > div:first-child),
+.programs :global(article > div:first-child img) {
+  border-radius: 0 !important;
+}
+.programs :global(article > div:last-child) {
+  min-height: 250px !important;
+  border-radius: 0 !important;
+  padding: 23px !important;
+}
+.programs :global(article > div:first-child img) {
+  height: 175px !important;
+}
+.connections > div > .heading {
+  margin-bottom: 26px;
+}
+.connections > div > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.connections :global(article) {
+  min-width: 120px;
+}
+.tourGrid {
+  align-items: start;
+}
+.tourGrid address {
+  margin-top: 26px;
+  padding: 20px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+  font-style: normal;
+}
+.tourGrid address b {
+  color: var(--red);
+}
+.contactForm {
+  display: grid;
+  gap: 20px;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #eee9e0;
+  box-shadow: 0 10px 35px rgba(88, 40, 20, 0.05);
+}
+.contactForm h3 {
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--red);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.contactForm label {
+  display: grid;
+  gap: 7px;
+  color: #8b8178;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #e9e4dc;
+  background: #fdfcf9;
+  color: var(--text);
+  font:
+    13px Arial,
+    sans-serif;
+}
+.full {
+  grid-column: 1/-1;
+}
+.contactForm button {
+  width: 100%;
+}
+.formStatus {
+  font-size: 13px;
+}
+.formStatus a {
+  text-decoration: underline;
+}
+.enrollment {
+  position: relative;
+  isolation: isolate;
+  padding: 85px 0;
+  text-align: center;
+  color: #fff;
+}
+.enrollment:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(158, 18, 26, 0.84);
+}
+.enrollment h2 {
+  font-size: 46px;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+.enrollment p {
+  max-width: 680px;
+  margin: 20px auto 28px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.enrollment > div > div {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.enrollment a {
+  min-width: 210px;
+}
+.events .heading {
+  text-align: left;
+  margin-bottom: 26px;
+}
+.events .heading i {
+  margin-left: 0;
+}
+.notice {
+  padding: 14px 18px;
+  border-left: 3px solid var(--gold);
+  background: #eee8df;
+  color: #8b8178;
+  font-size: 12px;
+}
+.events h3 {
+  margin: 34px 0 14px;
+  color: var(--red);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.eventFilters {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.eventFilters b {
+  color: var(--red);
+}
+.events ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.events li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  padding: 16px 12px;
+  border-bottom: 1px solid #eee6dc;
+  font-size: 13px;
+}
+.events li:nth-child(even) {
+  background: #f7efe5;
+}
+.events time {
+  color: var(--red);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.quoteGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.quoteGrid blockquote {
+  position: relative;
+  min-height: 230px;
+  margin: 0;
+  padding: 28px;
+  background: #fdfbf8;
+}
+.quoteGrid > blockquote > svg {
+  width: 15px;
+  color: var(--gold);
+}
+.quoteGrid blockquote > p {
+  margin: 16px 0 24px;
+  color: #67615c;
+  font:
+    italic 13px/1.7 Georgia,
+    serif;
+}
+.quoteGrid footer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.quoteGrid footer > span {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-content: center;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+}
+.quoteGrid footer b {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.quoteGrid footer small {
+  display: block;
+  margin-top: 3px;
+  color: var(--gold);
+  font-size: 8px;
+}
+.visitYangon {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 54px;
+}
+.visitYangon > span {
+  color: var(--text);
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.visitYangon small {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--gold);
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.visitYangon a {
+  min-width: 180px;
+}
+.quoteAuthor {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.quoteAuthor > span {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-content: center;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+}
+.quoteAuthor b {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.quoteAuthor small {
+  display: block;
+  margin-top: 3px;
+  color: var(--gold);
+  font-size: 8px;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(42px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.glanceGrid article,
+.quoteGrid blockquote,
+.events li {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+.glanceGrid article:hover {
+  transform: translateY(-8px);
+  background: #fff;
+  box-shadow: 0 18px 38px rgba(79, 14, 16, 0.09);
+}
+.glanceGrid article:hover h3 {
+  color: var(--gold);
+}
+.quoteGrid blockquote:hover {
+  transform: translateY(-8px);
+  background: #fff;
+  box-shadow: 0 18px 42px rgba(79, 14, 16, 0.11);
+}
+.events li:hover {
+  position: relative;
+  z-index: 1;
+  transform: translateX(8px);
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(79, 14, 16, 0.08);
+}
+@media (max-width: 900px) {
+  .hero {
+    min-height: 460px;
+  }
+  .hero h1 {
+    font-size: 45px;
+  }
+  .aboutGrid,
+  .tourGrid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  .aboutImage {
+    max-width: 620px;
+  }
+  .cardGrid,
+  .quoteGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .glanceGrid article {
+    padding-inline: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    min-height: 400px;
+    padding-bottom: 44px;
+  }
+  .hero h1 {
+    font-size: 34px;
+  }
+  .hero .backdrop {
+    object-position: 62% center;
+  }
+  .heading h2 {
+    font-size: 27px;
+  }
+  .glance,
+  .connections,
+  .testimonials,
+  .about,
+  .tour,
+  .events,
+  .programs {
+    padding: 58px 0;
+  }
+  .glanceGrid,
+  .cardGrid,
+  .quoteGrid {
+    grid-template-columns: 1fr;
+  }
+  .glanceGrid article {
+    padding: 28px 10px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .aboutImage img {
+    height: 320px;
+  }
+  .aboutImage b {
+    width: 105px;
+    height: 90px;
+  }
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  .full {
+    grid-column: auto;
+  }
+  .contactForm {
+    padding: 22px;
+  }
+  .enrollment h2 {
+    font-size: 35px;
+  }
+  .enrollment > div > div {
+    flex-direction: column;
+  }
+  .enrollment a {
+    width: 100%;
+  }
+  .events li {
+    grid-template-columns: 74px 1fr;
+  }
+  .visitYangon {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+  }
+  .visitYangon a {
+    width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .revealVisible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

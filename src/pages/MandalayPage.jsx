@@ -183,7 +183,7 @@ function Tour() {
             <address>
               <b>YIS Mandalay</b>
               <br />
-              No. 2/2, Between 62nd &amp; 63rd Street
+              MA-42, Between 42nd St & 43rd St, Between 52nd St & East Circular Rd Ye Mon,
               <br />
               Mahar Aung Myay Township, Mandalay
               <br />

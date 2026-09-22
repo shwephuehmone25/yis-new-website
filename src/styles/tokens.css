@@ -1,15 +1,15 @@
 :root {
-  --red: #890C25;
+  --red: #890c25;
   --red-dark: #971b1e;
   --wine: #4f0e10;
-  --gold: #FAA919;
+  --gold: #faa919;
   --text: #414141;
   --muted: #777;
   --cream: #fdfbf7;
   --sand: #f4f0e6;
   --border: #e6e2db;
   --white: #fff;
-  --serif: 'Keep Calm Heavy', Arial, Helvetica, sans-serif;
+  --serif: "Keep Calm Heavy", Arial, Helvetica, sans-serif;
   --radius: 6px;
   --container: 1280px;
   --section-space: 96px;

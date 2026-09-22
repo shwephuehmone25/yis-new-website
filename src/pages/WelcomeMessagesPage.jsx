@@ -5,18 +5,143 @@ import styles from "./welcome/WelcomeMessages.module.css";
 import useScrollEffects from "../hooks/useScrollEffects";
 
 const leaders = [
-  { id:"director", name:"Director’s Message​", role:"Director", email:"admissions.ygn@yis-yangon.edu.mm", image:"leadership-mike-livingston.jpg", greeting:"Welcome to Yangon International School and YIS Mandalay.​", paragraphs:["Choosing a school is one of the most important decisions a family makes, and we are honored that you are considering YIS as a partner in your child’s educational journey.​","For more than two decades, YIS has served families from Myanmar and around the world by providing a caring, inclusive, and academically challenging learning environment. Our mission remains at the heart of everything we do: developing lifelong learners and global citizens who are academically prepared, socially responsible, culturally sensitive, and personally fulfilled.​","At YIS, learning extends far beyond the classroom. Students are encouraged to think critically, solve real-world problems, explore their passions, and develop the confidence to lead with integrity and purpose. Through our American-based international curriculum, the International Baccalaureate (IB) Diploma Programme, athletics, visual and performing arts, service opportunities, technology integration, and extensive extracurricular activities, students discover their strengths and prepare for success in an ever-changing world.​","One of the defining characteristics of YIS is our community. From our Early Childhood classes through to our IB Diploma Programme courses, our students are supported by highly qualified international educators who genuinely care about their students’ growth and well-being. Strong partnerships between families and the school create an environment where every child is known, valued, and encouraged to reach their full potential.​","We are also proud of our commitment to Myanmar. Through our Myanmar Studies program and daily interactions within our diverse community, students develop an appreciation for local culture while gaining the global perspective needed to thrive in an interconnected world.​","Whether you are exploring YIS for the first time or are already part of our school family, we invite you to discover all that makes our community special. We encourage you to explore our website, connect with our admissions teams, and visit our campuses to experience firsthand the energy, warmth, and sense of purpose that define YIS.​","We look forward to welcoming your family to our learning community and partnering with you in helping your child thrive.​"]},
-  { id:"principal", name:"Principal’s message​", role:"Principal", email:"admissions.ygn@yis-yangon.edu.mm", image:"principal.jpg", greeting:"Welcome to Year Two at YIS Mandalay​", salutation:"Dear YIS Mandalay Community,​", paragraphs:["As we begin our year, having been founded in 2015, we celebrate how far we have come and look forward with excitement to all that lies ahead.​","This year, we are delighted to welcome new teachers and staff from across the globe, bringing diverse experiences, fresh perspectives, and a shared commitment to excellence in teaching and learning. Their expertise will strengthen the vibrant international community we are building together.​","Our campus continues to grow alongside our students. New playgrounds provide spaces for exploration, creativity, and connection, while expanded cafeteria areas offer welcoming places where friendships and community can flourish. Our After School Activities program has also expanded to better meet the interests and needs of our students, providing meaningful opportunities for leadership, exploration, creativity, and personal growth.​","One of the things that makes YIS unique is our purpose-built campus, designed around the needs of learners. Our flexible classrooms feature adaptable furniture and thoughtfully designed learning environments that can transform throughout the day. Students may work independently, collaborate in teams, engage in inquiry, or share their thinking in a variety of settings. These spaces encourage choice, movement, creativity, and agency, reflecting our belief that the learning environment should adapt to students, not the other way around.​","At YIS, we are committed to nurturing the whole child. We strive to provide a balanced educational experience that supports cultural sensitivity, academic achievement, social-emotional development, and personal fulfillment. We want every student to be challenged intellectually, supported emotionally, and empowered to discover their passions, strengths, and sense of purpose.​","While our facilities continue to evolve, it is our people who make YIS special. Together, we are creating a culture where every student is known, valued, challenged, and inspired to reach their full potential.​","Thank you for being part of this remarkable journey. Whether you are returning or joining us for the first time, welcome to YIS Mandalay. We look forward to learning, growing, and thriving together.​"], signoffName:"YIS Mandalay Heather Kissack", tagline:"Building Hope. Growing Together. Shaping the Future."},
+  {
+    id: "director",
+    name: "Director’s Message​",
+    role: "Director",
+    email: "admissions.ygn@yis-yangon.edu.mm",
+    image: "leadership-mike-livingston.jpg",
+    greeting: "Welcome to Yangon International School and YIS Mandalay.​",
+    paragraphs: [
+      "Choosing a school is one of the most important decisions a family makes, and we are honored that you are considering YIS as a partner in your child’s educational journey.​",
+      "For more than two decades, YIS has served families from Myanmar and around the world by providing a caring, inclusive, and academically challenging learning environment. Our mission remains at the heart of everything we do: developing lifelong learners and global citizens who are academically prepared, socially responsible, culturally sensitive, and personally fulfilled.​",
+      "At YIS, learning extends far beyond the classroom. Students are encouraged to think critically, solve real-world problems, explore their passions, and develop the confidence to lead with integrity and purpose. Through our American-based international curriculum, the International Baccalaureate (IB) Diploma Programme, athletics, visual and performing arts, service opportunities, technology integration, and extensive extracurricular activities, students discover their strengths and prepare for success in an ever-changing world.​",
+      "One of the defining characteristics of YIS is our community. From our Early Childhood classes through to our IB Diploma Programme courses, our students are supported by highly qualified international educators who genuinely care about their students’ growth and well-being. Strong partnerships between families and the school create an environment where every child is known, valued, and encouraged to reach their full potential.​",
+      "We are also proud of our commitment to Myanmar. Through our Myanmar Studies program and daily interactions within our diverse community, students develop an appreciation for local culture while gaining the global perspective needed to thrive in an interconnected world.​",
+      "Whether you are exploring YIS for the first time or are already part of our school family, we invite you to discover all that makes our community special. We encourage you to explore our website, connect with our admissions teams, and visit our campuses to experience firsthand the energy, warmth, and sense of purpose that define YIS.​",
+      "We look forward to welcoming your family to our learning community and partnering with you in helping your child thrive.​",
+    ],
+  },
+  {
+    id: "principal",
+    name: "Principal’s message​",
+    role: "Principal",
+    email: "admissions.ygn@yis-yangon.edu.mm",
+    image: "principal.jpg",
+    greeting: "Welcome to Year Two at YIS Mandalay​",
+    salutation: "Dear YIS Mandalay Community,​",
+    paragraphs: [
+      "As we begin our year, having been founded in 2015, we celebrate how far we have come and look forward with excitement to all that lies ahead.​",
+      "This year, we are delighted to welcome new teachers and staff from across the globe, bringing diverse experiences, fresh perspectives, and a shared commitment to excellence in teaching and learning. Their expertise will strengthen the vibrant international community we are building together.​",
+      "Our campus continues to grow alongside our students. New playgrounds provide spaces for exploration, creativity, and connection, while expanded cafeteria areas offer welcoming places where friendships and community can flourish. Our After School Activities program has also expanded to better meet the interests and needs of our students, providing meaningful opportunities for leadership, exploration, creativity, and personal growth.​",
+      "One of the things that makes YIS unique is our purpose-built campus, designed around the needs of learners. Our flexible classrooms feature adaptable furniture and thoughtfully designed learning environments that can transform throughout the day. Students may work independently, collaborate in teams, engage in inquiry, or share their thinking in a variety of settings. These spaces encourage choice, movement, creativity, and agency, reflecting our belief that the learning environment should adapt to students, not the other way around.​",
+      "At YIS, we are committed to nurturing the whole child. We strive to provide a balanced educational experience that supports cultural sensitivity, academic achievement, social-emotional development, and personal fulfillment. We want every student to be challenged intellectually, supported emotionally, and empowered to discover their passions, strengths, and sense of purpose.​",
+      "While our facilities continue to evolve, it is our people who make YIS special. Together, we are creating a culture where every student is known, valued, challenged, and inspired to reach their full potential.​",
+      "Thank you for being part of this remarkable journey. Whether you are returning or joining us for the first time, welcome to YIS Mandalay. We look forward to learning, growing, and thriving together.​",
+    ],
+    signoffName: "YIS Mandalay Heather Kissack",
+    tagline: "Building Hope. Growing Together. Shaping the Future.",
+  },
 ];
 
-function Hero(){return <section className={styles.hero}><img src="/mandalay/23-scaled.jpg" alt=""/><div><h1>Welcome messages</h1><span/></div></section>}
+function Hero() {
+  return (
+    <section className={styles.hero}>
+      <img src="/mandalay/23-scaled.jpg" alt="" />
+      <div>
+        <h1>Welcome messages</h1>
+        <span />
+      </div>
+    </section>
+  );
+}
 
-export default function WelcomeMessagesPage(){
+export default function WelcomeMessagesPage() {
   useScrollEffects();
-  const [selected,setSelected]=useState(leaders[0]);
-  useEffect(()=>{const previous=document.title;document.title="Welcome Messages | Yangon International School";return()=>{document.title=previous}},[]);
-  return <MainLayout><Hero/><section className={styles.messages}><Container narrow><div className={styles.layout}>
-    <aside><h2>Leadership team</h2>{leaders.map(leader=><button key={leader.id} className={selected.id===leader.id?styles.active:""} onClick={()=>setSelected(leader)}><img src={`/mandalay/${leader.image}`} alt=""/><span><strong>{leader.name}</strong><small>{leader.role}</small></span></button>)}<div className={styles.contact}><b>Contact</b><a href={`mailto:${selected.email}`}>{selected.email}</a></div></aside>
-    <div><article className={styles.letter}><header><img src={`/mandalay/${selected.image}`} alt=""/><div><h2>{selected.name}</h2><strong>{selected.role}</strong><span>Yangon International School</span></div></header><div className={styles.body}><span className={styles.quote}>”</span><p><em>{selected.greeting}</em></p>{selected.salutation&&<p>{selected.salutation}</p>}{selected.paragraphs.map(text=><p key={text}>{text}</p>)}<footer><em>Warm regards,</em><strong>{selected.signoffName||selected.name}</strong>{selected.tagline?<em>{selected.tagline}</em>:<><b>{selected.role}</b><a href={`mailto:${selected.email}`}>{selected.email}</a></>}</footer></div></article><nav className={styles.tabs} aria-label="Welcome messages">{leaders.map(leader=><button key={leader.id} className={selected.id===leader.id?styles.active:""} onClick={()=>setSelected(leader)}>{leader.role}</button>)}</nav></div>
-  </div></Container></section></MainLayout>;
+  const [selected, setSelected] = useState(leaders[0]);
+  useEffect(() => {
+    const previous = document.title;
+    document.title = "Welcome Messages | Yangon International School";
+    return () => {
+      document.title = previous;
+    };
+  }, []);
+  return (
+    <MainLayout>
+      <Hero />
+      <section className={styles.messages}>
+        <Container narrow>
+          <div className={styles.layout}>
+            <aside>
+              <h2>Leadership team</h2>
+              {leaders.map((leader) => (
+                <button
+                  key={leader.id}
+                  className={selected.id === leader.id ? styles.active : ""}
+                  onClick={() => setSelected(leader)}
+                >
+                  <img src={`/mandalay/${leader.image}`} alt="" />
+                  <span>
+                    <strong>{leader.name}</strong>
+                    <small>{leader.role}</small>
+                  </span>
+                </button>
+              ))}
+              <div className={styles.contact}>
+                <b>Contact</b>
+                <a href={`mailto:${selected.email}`}>{selected.email}</a>
+              </div>
+            </aside>
+            <div>
+              <article className={styles.letter}>
+                <header>
+                  <img src={`/mandalay/${selected.image}`} alt="" />
+                  <div>
+                    <h2>{selected.name}</h2>
+                    <strong>{selected.role}</strong>
+                    <span>Yangon International School</span>
+                  </div>
+                </header>
+                <div className={styles.body}>
+                  <span className={styles.quote}>”</span>
+                  <p>
+                    <em>{selected.greeting}</em>
+                  </p>
+                  {selected.salutation && <p>{selected.salutation}</p>}
+                  {selected.paragraphs.map((text) => (
+                    <p key={text}>{text}</p>
+                  ))}
+                  <footer>
+                    <em>Warm regards,</em>
+                    <strong>{selected.signoffName || selected.name}</strong>
+                    {selected.tagline ? (
+                      <em>{selected.tagline}</em>
+                    ) : (
+                      <>
+                        <b>{selected.role}</b>
+                        <a href={`mailto:${selected.email}`}>
+                          {selected.email}
+                        </a>
+                      </>
+                    )}
+                  </footer>
+                </div>
+              </article>
+              <nav className={styles.tabs} aria-label="Welcome messages">
+                {leaders.map((leader) => (
+                  <button
+                    key={leader.id}
+                    className={selected.id === leader.id ? styles.active : ""}
+                    onClick={() => setSelected(leader)}
+                  >
+                    {leader.role}
+                  </button>
+                ))}
+              </nav>
+            </div>
+          </div>
+        </Container>
+      </section>
+    </MainLayout>
+  );
 }

@@ -111,16 +111,20 @@ function Requirements() {
                   {item}
                 </li>
               ))}
-            </ul><br />
+            </ul>
+            <br />
             <p>
-             For families moving to Myanmar for the first time, we understand that the challenge of addressing
-            your child’s educational needs is a daunting task. For families currently residing in Mandalay, we
-            understand the demands of moving your child to a new school.​
-            </p><br />
+              For families moving to Myanmar for the first time, we understand
+              that the challenge of addressing your child’s educational needs is
+              a daunting task. For families currently residing in Mandalay, we
+              understand the demands of moving your child to a new school.​
+            </p>
+            <br />
             <p>
-             Our Admissions office is committed to assisting families with these transitions. We are available
-             to answer any and all questions you might have in order to make the process as seamless as
-             possible for you and your family.​​
+              Our Admissions office is committed to assisting families with
+              these transitions. We are available to answer any and all
+              questions you might have in order to make the process as seamless
+              as possible for you and your family.​​
             </p>
           </div>
           <figure>
@@ -137,10 +141,22 @@ function Requirements() {
 
 function ProspectiveFamilies() {
   const expectations = [
-    ["Academic programme", "YIS has an academically rigorous, American, standards-based academic program."],
-    ["Language of instruction", "All instruction is in English and a grade appropriate level of proficiency is necessary."],
-    ["Secondary education", "The Secondary program at YIS is a college preparatory program."],
-    ["Student experience", "The school promotes social activities, the appreciation of the Myanmar culture, and the personal fulfillment of each student."],
+    [
+      "Academic programme",
+      "YIS has an academically rigorous, American, standards-based academic program.",
+    ],
+    [
+      "Language of instruction",
+      "All instruction is in English and a grade appropriate level of proficiency is necessary.",
+    ],
+    [
+      "Secondary education",
+      "The Secondary program at YIS is a college preparatory program.",
+    ],
+    [
+      "Student experience",
+      "The school promotes social activities, the appreciation of the Myanmar culture, and the personal fulfillment of each student.",
+    ],
   ];
 
   return (
@@ -151,7 +167,10 @@ function ProspectiveFamilies() {
             <span>Before applying</span>
             <h2 id="prospective-title">Prospective students and parents</h2>
           </div>
-          <p>Prospective students and parents should be familiar with the school’s program, facilities, and student expectations.</p>
+          <p>
+            Prospective students and parents should be familiar with the
+            school’s program, facilities, and student expectations.
+          </p>
         </div>
         <div className={styles.expectationGrid}>
           {expectations.map(([title, text], index) => (
@@ -164,12 +183,32 @@ function ProspectiveFamilies() {
         </div>
         <aside className={styles.selectiveNote}>
           <span>Our admissions approach</span>
-          <p>To ensure student success at YIS, admissions processes are selective; assessments and interviews are used with applicants to determine their ability and potential with our school and student body.</p>
+          <p>
+            To ensure student success at YIS, admissions processes are
+            selective; assessments and interviews are used with applicants to
+            determine their ability and potential with our school and student
+            body.
+          </p>
         </aside>
-        <div className={styles.prospectiveGallery} aria-label="Learning and facilities at YIS">
-          <img src="/mandalay/admission-1.jpg" alt="A student focused on classroom work" loading="lazy" />
-          <img src="/mandalay/admission-2.jpg" alt="A student walking through the school library" loading="lazy" />
-          <img src="/mandalay/admission-3.jpg" alt="The YIS school theatre" loading="lazy" />
+        <div
+          className={styles.prospectiveGallery}
+          aria-label="Learning and facilities at YIS"
+        >
+          <img
+            src="/mandalay/admission-1.jpg"
+            alt="A student focused on classroom work"
+            loading="lazy"
+          />
+          <img
+            src="/mandalay/admission-2.jpg"
+            alt="A student walking through the school library"
+            loading="lazy"
+          />
+          <img
+            src="/mandalay/admission-3.jpg"
+            alt="The YIS school theatre"
+            loading="lazy"
+          />
         </div>
       </Container>
     </section>

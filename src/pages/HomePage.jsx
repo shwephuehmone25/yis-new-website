@@ -76,15 +76,27 @@ function AboutUs() {
     <section id="about" className={styles.about} aria-labelledby="about-title">
       <Container className={styles.aboutInner}>
         <figure className={styles.aboutImage}>
-          <img src="/mandalay/about-yis.webp" alt="A YIS teacher supporting a student in the classroom" loading="lazy" />
-          <figcaption><strong>2004</strong><span>Yangon campus established</span></figcaption>
+          <img
+            src="/mandalay/about-yis.webp"
+            alt="A YIS teacher supporting a student in the classroom"
+            loading="lazy"
+          />
+          <figcaption>
+            <strong>2004</strong>
+            <span>Yangon campus established</span>
+          </figcaption>
         </figure>
         <div className={styles.aboutContent}>
           <span>About YIS</span>
           <h2 id="about-title">Yangon International School</h2>
           <i aria-hidden="true" />
           <p>
-            Yangon International School is a college preparatory group of schools. The Yangon Campus was established in 2004. For over 15 years, we have been committed to delivering the highest level of education for our students. We are proud to be opening the Mandalay Campus this year to expand the reach of our dedication to lifelong learning to more students across Myanmar.
+            Yangon International School is a college preparatory group of
+            schools. The Yangon Campus was established in 2004. For over 15
+            years, we have been committed to delivering the highest level of
+            education for our students. We are proud to be opening the Mandalay
+            Campus this year to expand the reach of our dedication to lifelong
+            learning to more students across Myanmar.
           </p>
         </div>
       </Container>
@@ -129,7 +141,11 @@ function VisionMission() {
         <div>
           <h2>Our Mission</h2>
           <p>
-            YIS is a network of college preparatory schools that seeks to foster the development of the whole child, who is a participating global citizen and lifelong learner: one who is academically well-prepared, socially responsible, culturally sensitive, and personally fulfilled.
+            YIS is a network of college preparatory schools that seeks to foster
+            the development of the whole child, who is a participating global
+            citizen and lifelong learner: one who is academically well-prepared,
+            socially responsible, culturally sensitive, and personally
+            fulfilled.
           </p>
         </div>
       </Container>
@@ -161,7 +177,9 @@ function Admissions({ onAction }) {
   return (
     <Section id="admissions">
       <SectionHeading title="Admissions">
-        The first step is to contact our admissions and to arrange a visit to truly understand how special our school is and what a wonderful place for your child to grow and develop into a leader of tomorrow.
+        The first step is to contact our admissions and to arrange a visit to
+        truly understand how special our school is and what a wonderful place
+        for your child to grow and develop into a leader of tomorrow.
         <br></br>We look forward to welcoming you to our Campus
       </SectionHeading>
       <ol className={styles.steps}>
